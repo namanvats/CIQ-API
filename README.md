@@ -23,3 +23,10 @@ Endpoint |HTTP Method | CRUD Method | Result
 `/authors/:id`| GET | READ | Get a single author
 `/authors/:id`| PUT | UPDATE | Update an author
 `/authors/:id/posts` | GET | READ | Nested Query Get all posts by particular author
+
+
+## ScreenShot
+
+![](static/root.JPG)
+<br />
+![](static/postslist.JPG)
