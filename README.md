@@ -27,6 +27,19 @@ Endpoint |HTTP Method | CRUD Method | Result
 
 ## ScreenShot
 
+## API Root
 ![](static/root.JPG)
 <br />
+
+## GET
 ![](static/postslist.JPG)
+<br />
+
+## Post PATCH
+![](static/post-id-patch.JPG)
+
+## Authors/id/posts Nested
+![](static/author-id-posts.JPG)
+
+## Filter
+![](static/filter-post.JPG)
