@@ -25,7 +25,7 @@ Endpoint |HTTP Method | CRUD Method | Result
 `/authors/:id/posts` | GET | READ | Nested Query Get all posts by particular author
 
 
-## ScreenShot
+## Screenshot
 
 ## API Root
 ![](static/root.JPG)
@@ -37,9 +37,10 @@ Endpoint |HTTP Method | CRUD Method | Result
 
 ## Post PATCH
 ![](static/post-id-patch.JPG)
+<br />
 
-## Authors/id/posts Nested
-![](static/author-id-posts.JPG)
+## Authors/id/posts - Nested
+![](static/authors-id-posts.JPG)
 
 ## Filter
 ![](static/filter-post.JPG)
