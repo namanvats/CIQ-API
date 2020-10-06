@@ -11,13 +11,13 @@ class Author(models.Model):
  
 class Post(models.Model):
     title = models.CharField(max_length=100)
-    author_name = models.ForeignKey(Author, on_delete=models.CASCADE,related_name="posts")
+    author = models.ForeignKey(Author, on_delete=models.CASCADE,related_name="posts")
     views = models.PositiveIntegerField(default=1)
-    reviews = models.PositiveIntegerField(default=0)
+    reviews = models.PositiveIntegerField(default=1)
     
     def __str__(self):
         return f'{self.title}'
     
-    @property
-    def author(self):
-        return f'{self.author_name.first_name}{self.author_name.last_name}'
+    #@property
+    #ef author(self):
+       # return f'{self.author_name.first_name}{self.author_name.last_name}'

@@ -5,7 +5,6 @@ from .models import Author, Post
  
  
 class AuthorSerializer(ModelSerializer):
-    #posts = Post.objects.count()
     posts_count = serializers.SerializerMethodField()
     class Meta:
         model = Author
@@ -14,7 +13,15 @@ class AuthorSerializer(ModelSerializer):
         return obj.posts.count()
  
 class PostSerializer(ModelSerializer):
-    author = serializers.ReadOnlyField()
+    #author = serializers.SerializerMethodField()
+    def validate(self, data):
+        if data['views'] < 0:
+            raise serializers.ValidationError("Views must be Positive")
+        if data['reviews'] < 0:
+            raise serializers.ValidationError("Reviews must be Positive")
+        return data
+    #def get_author(self,obj):
+    #    return obj.first_name
     class Meta:
         model = Post
         fields = ('id','title','author', 'views', 'reviews')
