@@ -19,8 +19,7 @@ class PostViewSet(NestedViewSetMixin, ModelViewSet):
     #model = Post
     serializer_class = PostSerializer
     queryset = Post.objects.all()
-    search_fields = ["author"]
-    filterset_fields = ["author"]
     filter_backends = [DjangoFilterBackend]
+    filterset_fields = ["author"]
     http_method_names = ['get', 'post', 'head', 'update', 'patch','delete']
     

@@ -10,7 +10,7 @@ media
 *.bak 
 
 # Environments 
-.env 
+#.env 
 .venv 
 env/ 
 venv/ 
