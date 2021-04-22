@@ -8,7 +8,7 @@
 	python manage.py runserver
 
 ```
-The project will be available at **127.0.0.1:8000**.
+The project will be available at **http://127.0.0.1:8000**.
 
 **Note** : Secret Key is pushed intentionally and DEBUG mode is True as it was a task, also it is advised to use virtual environment for running the project and virtualenv should be intialized in folder level one above the folder containing *manage.py* file
 
